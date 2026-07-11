@@ -48,3 +48,4 @@ app.*.map.json
 /google_fonts/*.ttf
 /google_fonts/*.otf
 /google_fonts/*.woff2
+.claude/
