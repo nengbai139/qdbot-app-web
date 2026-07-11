@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter build *)",
+      "Bash(md5 build/web/main.dart.js)",
+      "Bash(ssh -o ConnectTimeout=10 baineng@39.96.167.94 \"cd ~/qdtech && docker compose logs --tail=30 qdbot_system 2>&1 | grep -E 'platform=web|Flutter connected|ws/app/connect'\")"
+    ]
+  }
+}
