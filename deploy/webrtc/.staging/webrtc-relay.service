@@ -1,0 +1,13 @@
+[Unit]
+Description=QDBot WebRTC ICE/TURN credential relay
+After=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/qdbot/webrtc-relay.env
+ExecStart=/usr/local/bin/qdbot-webrtc-relay
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

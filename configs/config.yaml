@@ -1,0 +1,27 @@
+# QDBot App 配置 - 云端部署
+
+app:
+  name: qdbot_app
+  version: 1.0.0
+
+# 存储配置
+storage:
+  path: ./data
+
+# QDBot System 服务 (云端)
+qdbot_system:
+  url: https://www.aimatchem.com
+  api_version: v1
+  ws_url: wss://www.aimatchem.com/ws/app/connect
+
+# 推送配置
+push:
+  fcm:
+    enabled: false
+    server_key: ""
+    project_id: ""
+
+# 日志配置
+log:
+  level: debug
+  format: json

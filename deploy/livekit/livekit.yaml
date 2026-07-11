@@ -1,0 +1,18 @@
+# ponytail: 自托管 LiveKit SFU；公网经 nginx /livekit/ → 127.0.0.1:7880
+# node-ip 由 docker run --node-ip 传入，勿写在 logging 下
+port: 7880
+bind_addresses:
+  - ""
+rtc:
+  tcp_port: 7881
+  port_range_start: 50000
+  port_range_end: 50100
+  use_external_ip: true
+room:
+  auto_create: true
+  empty_timeout: 300
+  max_participants: 50
+redis:
+  address: 127.0.0.1:6379
+logging:
+  level: info

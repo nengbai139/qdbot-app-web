@@ -1,0 +1,3 @@
+void startIncomingRing() {}
+
+void stopIncomingRing() {}
